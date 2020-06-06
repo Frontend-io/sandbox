@@ -1,0 +1,11 @@
+export const IS_SEARCHING = "IS_SEARCHING"
+
+export const DONE_SEARCHING = "DONE_SEARCHING"
+
+export const SEARCH_SUCCESS = "SEARCH_SUCCESS"
+
+export const SEARCH_FAILURE = "SEARCH_FAILURE"
+
+export const NEXT_PAGE = "NEXT_PAGE"
+
+export const PREV_PAGE = "PREV_PAGE"

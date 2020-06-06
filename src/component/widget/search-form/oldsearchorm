@@ -1,0 +1,73 @@
+
+// const StyledForm = styled.form`
+
+//     & input{
+//         padding: 20px;
+//         padding-right: 45px;
+//         border-radius: 3px !important;
+//         font-size: 18px;
+//         border: 1px solid transparent;
+//         background: #ffffff;
+//         transition: .3s;
+//         position: relative
+//     }
+//     & input:focus{
+//         box-shadow: 0px 5px 30px rgba(0,0,0,.2);
+//         transition: .3s;
+//     }
+//     & i{
+//         right: 5px;
+//         top: 45%;
+//         transform: translateY(-50%);
+//         cursor: pointer;
+//         padding: 10px
+//     }
+//     & i:hover{
+//         color: #222
+//     }
+    
+//     @media(max-width: 768px){
+//         & input{
+//             padding: 15px 45px 15px 20px;
+//         }
+//     }
+// `
+
+// const SearchForm = (props)=>{
+
+//     const { dispatch } = props
+//     const [searchTerm, setSearchTerm ] = useState('')
+
+//     const searchHandler = (e)=>{
+//         setSearchTerm(e.target.value)
+//     }
+//     const beginSearch = (e)=>{
+//         e.preventDefault()
+//         dispatch(searching(searchTerm, 20))
+//         setSearchTerm('')
+//     }
+
+
+
+
+//     return(
+//         <StyledForm onSubmit={beginSearch}> 
+//             <div className=" relative no-wrap align-c grid field">
+//                 <input 
+//                     autoFocus={true}
+//                     onChange={searchHandler}
+//                     value = {searchTerm}
+//                     autoComplete="off"
+//                     name="searchImage" 
+//                     placeholder="What are you looking for?" 
+//                     className="form-fix" 
+//                 />
+//                 <i onClick={beginSearch} type='submit' className='grey-t absolute material-icons'>search</i>
+//             </div>
+//         </StyledForm>
+//     )
+// }
+
+
+
+// export default SearchForm

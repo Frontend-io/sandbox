@@ -1,0 +1,113 @@
+.collections{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap
+}
+.content-head{
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding: 10px 20px !important;
+    background: #fff;
+    z-index: 99;
+}
+.collections .action-tab{
+    width: 23%;
+    min-width: 220px;
+    border-right: 1px solid #eee;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    padding: 130px 20px 20px 20px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.collections .action-tab .title{
+    padding: 5px 0px ;
+    font-size: 14px;
+}
+.collections .action-tab .title-inner{
+    text-transform: capitalize;
+}
+
+.collections .action-tab .specimen{
+    display: flex;
+    max-height: 350px;
+}
+.collections .action-tab img{
+    margin: 5px auto;
+    object-fit: contain
+}
+.collections .action-tab .action{
+    margin-top: 5px;
+}
+.collections .action-tab .action button{
+    color: var(--primary-color)
+}
+.collections .action-tab .action button:first-child{
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    background: #fff;
+}
+.collections .action-tab .action button:last-child{
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    background:var(--primary-color);
+    margin-top: 5px;
+    color: #eee
+}
+.collections .action-tab .action button:hover{
+    opacity: .9;
+    transition: opacity .3s;
+}
+.collections .collection-content{
+    width: 75%;
+}
+.collections .collection-content.column .related-content{
+    column-count: 3;   
+}
+
+
+@media(max-width: 1050px){
+    .collections .collection-content.column{
+        width: 73%
+    }
+    .collections .collection-content.column .related-content{
+         column-count: 2;   
+    }
+}
+
+
+@media(max-width: 850px){
+    .collections{
+        padding: 20px;
+        justify-content: center
+    }
+    .collections .action-tab{
+        display: none;
+        background: #fff;
+        margin-top: 50px;
+        position: relative !important;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        order: 2
+    }
+    .collection-content{
+        width: 100% !important;
+    }
+}
+
+@media(max-width: 600px){
+    .collections .collection-content.column{
+        width: 100%
+    }
+    .collections .collection-content.column .related-content{
+        column-count: 1;   
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
